@@ -1,24 +1,38 @@
-#parentContainer
-{
-    display: flex;
-    margin: auto;
-    width: 50%;
-    border: 3px solid #73AD21;
-    padding: 10px;
-    padding-top: 250px;
-    padding-bottom: 250px;
-    margin-bottom: 20px;
-    margin-top: 150px;
-
+#parentContainer {
+	display: flex;
+	margin: auto;
+	width: 50%;
+	border: 3px solid #73AD21;
+	padding: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	font-family: 'Fredoka', sans-serif;
 }
 
-.imgButton
-{
-    text-align:center;
+#titleText {
+	width: 50.5%;
+	padding: 10px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: grey;
+	margin: auto;
 }
 
-.imgContainer img, .imgContainer .imgButton button 
-{
-    position: relative;
-    width: 100%;
+.imgButton {
+	text-align: center;
+}
+
+button {
+	font-family: 'Fredoka', sans-serif;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.imgContainer img,
+.imgContainer .imgButton button {
+	position: relative;
+	width: 100%;
 }
