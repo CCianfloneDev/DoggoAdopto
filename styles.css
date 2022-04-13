@@ -1,0 +1,24 @@
+#parentContainer
+{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+
+}
+
+.imgButton
+{
+    text-align:center;
+}
+
+.imgContainer img, .imgContainer .imgButton button 
+{
+    position: relative;
+    width: 100%;
+}
