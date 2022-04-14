@@ -6,6 +6,7 @@
 /*Styles container for table*/
 #parentContainer {
 	display: flex;
+	justify-content: space-between;
 	margin: auto;
 	width: 50%;
 	border: 3px solid #73AD21;
@@ -41,6 +42,5 @@ button {
 /*Styling images and buttons*/
 .imgContainer img,
 .imgContainer .imgButton button {
-	position: relative;
 	width: 100%;
 }
