@@ -1,3 +1,9 @@
+/*Applies same font to whole page*/
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+/*Styles container for table*/
 #parentContainer {
 	display: flex;
 	margin: auto;
@@ -8,9 +14,9 @@
 	padding-bottom: 12px;
 	margin-bottom: 20px;
 	margin-top: 5px;
-	font-family: 'Fredoka', sans-serif;
 }
 
+/*styling for header text*/
 #titleText {
 	width: 50.5%;
 	padding: 10px;
@@ -20,17 +26,19 @@
 	margin: auto;
 }
 
+/*centers text in buttons*/
 .imgButton {
 	text-align: center;
 }
 
+/*styling buttons*/
 button {
-	font-family: 'Fredoka', sans-serif;
 	font-size: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
+/*Styling images and buttons*/
 .imgContainer img,
 .imgContainer .imgButton button {
 	position: relative;
