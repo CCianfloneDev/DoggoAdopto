@@ -14,7 +14,8 @@ async function load() {
         .then(result => { return result.json() })
         .then(data => rightData = data);
 
-    await leftFetch, rightFetch;
+    await leftFetch;
+    await rightFetch;
 
     populateImages(leftData, rightData);
 }
