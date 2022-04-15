@@ -1,31 +1,37 @@
 
 /*
-	Load function
-	Using the fetch API, get dataset from the Dog API
+    Load function
+    Using the fetch API, get dataset from the Dog API
 */
-function load() {
+async function load() {
+    let leftData, rightData;
 
-    fetch("https://dog.ceo/api/breeds/image/random")
-        .then(function(result){
-            return result.json();
-        })
-        .then(function(data){
-            populateImages(data);
-        });
+    let leftFetch = fetch("https://dog.ceo/api/breeds/image/random")
+        .then(result => { return result.json(); })
+        .then(data => leftData = data);
+
+    let rightFetch = fetch("https://dog.ceo/api/breeds/image/random")
+        .then(result => { return result.json() })
+        .then(data => rightData = data);
+
+    await leftFetch;
+    await rightFetch;
+
+    populateImages(leftData, rightData);
 }
 
 /*
-	populateImages function
-	Using the dog API dataset populate existing image elements
+    populateImages function
+    Using the dog API dataset populate existing image elements
 */
-function populateImages(data){
+function populateImages(leftData, rightData) {
 
     let leftDog = document.getElementById("leftDog");
     let rightDog = document.getElementById("rightDog");
 
 
-    leftDog.src = `${data.message}`;
-    rightDog.src = `${data.message}`;
+    leftDog.src = `${leftData.message}`;
+    rightDog.src = `${rightData.message}`;
 }
 
 //adds an event listener to execute onLoad method when page finished loading
