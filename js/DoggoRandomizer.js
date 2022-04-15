@@ -1,3 +1,5 @@
+//adds an event listener to execute onLoad method when page finished loading
+document.addEventListener("DOMContentLoaded", load);
 
 /*
     Load function
@@ -18,6 +20,10 @@ async function load() {
     await rightFetch;
 
     populateImages(leftData, rightData);
+
+    document.getElementById("leftButton").addEventListener("click", load);
+    document.getElementById("rightButton").addEventListener("click", load);
+
 }
 
 /*
@@ -33,6 +39,3 @@ function populateImages(leftData, rightData) {
     leftDog.src = `${leftData.message}`;
     rightDog.src = `${rightData.message}`;
 }
-
-//adds an event listener to execute onLoad method when page finished loading
-document.addEventListener("DOMContentLoaded", load);    
