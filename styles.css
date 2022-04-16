@@ -3,13 +3,26 @@
     font-family: 'Fredoka', sans-serif;
 }
 
+body
+{
+	background: rgb(36,93,94);
+	background: radial-gradient(circle, rgba(36,93,94,1) 11%, rgba(113,153,161,1) 70%);
+}
+
+#parentContainer
+{
+	background: rgb(20,59,60);
+	background: radial-gradient(circle, rgba(20,59,60,1) 11%, rgba(89,124,131,1) 70%);
+	border-radius: 10px;
+}
+
 /*Styles container for table*/
 #parentContainer {
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
 	width: 50%;
-	border: 3px solid #73AD21;
+	border: 3px solid black;
 	padding: 10px;
 	padding-top: 12px;
 	padding-bottom: 12px;
@@ -23,7 +36,7 @@
 	padding: 10px;
 	text-align: center;
 	border-radius: 5px;
-	background-color: grey;
+	background-color: whitesmoke;
 	margin: auto;
 }
 
@@ -37,10 +50,14 @@ button {
 	font-size: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background-color: whitesmoke;
+
 }
 
 /*Styling images and buttons*/
 .imgContainer img,
 .imgContainer .imgButton button {
 	width: 100%;
+	border: 3px solid grey;
+	border-radius: 20px;
 }
