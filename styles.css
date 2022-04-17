@@ -61,3 +61,13 @@ button {
 	border: 3px solid grey;
 	border-radius: 20px;
 }
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: lightblue;
+	color: white;
+	text-align: center;
+  }
