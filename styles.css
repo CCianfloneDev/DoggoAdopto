@@ -89,7 +89,12 @@ button:active {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: lightblue;
+	background-color: darkcyan;
 	color: white;
 	text-align: center;
-  }
+}
+
+#footer a{
+	text-decoration: none;
+	color: lightgreen;
+}
